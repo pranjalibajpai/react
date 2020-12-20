@@ -1,5 +1,5 @@
-## Day 1 20/12/20
-- REACTDOM.render(What to Show, Where to show)
+>#  Day 1 - 20/12/20
+- ReactDOM.render(What to Show, Where to show)
 - Where To Show - HTML element div with id = root
 - JSX - Plain HTML in JS File
 - Babel - JS Compiler 
@@ -18,4 +18,17 @@
 - className instead of class
 - change text/javascript to text/JSX
 - alt+click -multicursor
-- 
+- inline styling : style = {JS Object}
+```
+const customStyle = { color: "blue" };
+<h1 style={customStyle}> Hello World! </h1>
+```
+- Components [Sandbox]https://codesandbox.io/s/component-forked-s9jrf?file=/src/index.jsx)
+ - custom components in pascal case to differentiate from the html elements
+ ```
+ function Heading(){
+ return <h1>HEllo World</h1>
+ }
+ ...
+ <Heading />
+ ```
