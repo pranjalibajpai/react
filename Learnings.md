@@ -23,7 +23,8 @@
 const customStyle = { color: "blue" };
 <h1 style={customStyle}> Hello World! </h1>
 ```
-- Components [Sandbox]https://codesandbox.io/s/component-forked-s9jrf?file=/src/index.jsx)
+- Components [Sandbox](
+https://codesandbox.io/s/component-forked-s9jrf?file=/src/index.jsx)
  - custom components in pascal case to differentiate from the html elements
  ```
  function Heading(){
@@ -32,3 +33,24 @@ const customStyle = { color: "blue" };
  ...
  <Heading />
  ```
+ >#  Day 2 - 21/12/20
+ - [Components Practice](https://codesandbox.io/s/react-components-practice-forked-umiw1?file=/src/components/App.jsx)
+ - npx create-react-app <name>
+   cd <name>
+   npm start
+ - [Google Keep Clone] (https://uyz3m.csb.app/)
+ - React Props 
+    - different pieces of info on components (custom components custom properties)
+```
+function Card(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <img src={props.img} alt="avatar_img" />
+      <p>{props.tel}</p>
+      <p>{props.mail}</p>
+    </div>
+  );
+}
+```
+- https://codesandbox.io/s/react-props-forked-ddg7f?file=/src/index.js    
