@@ -53,4 +53,24 @@ function Card(props) {
   );
 }
 ```
-- https://codesandbox.io/s/react-props-forked-ddg7f?file=/src/index.js    
+- https://codesandbox.io/s/react-props-forked-ddg7f?file=/src/index.js 
+>#  Day 3 - 22/12/20
+- [Props Practice] (https://codesandbox.io/s/react-props-practice-forked-zo8ek?file=/src/components/Card.jsx)
+- use export before importing
+- React Developer Tools
+- Map values to components
+    - use of key is necessary but key is not a prop, if we want to use this key then make a new prop with same value
+```
+ {<array>.map(<function>)} //functional programming
+ function <name>(item){
+    }
+```
+- [Mapping Components Practice](https://codesandbox.io/s/mapping-components-practice-forked-gh6k5?file=/src/components/App.jsx) | [Emojipedia](https://gh6k5.csb.app/)
+- Methods
+    - map
+    - filter - creates an array for values which return true
+        - <array>.filter(function(item){return item>10});
+    - reduce
+    - find
+    - findIndex
+    
