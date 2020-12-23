@@ -38,7 +38,7 @@ https://codesandbox.io/s/component-forked-s9jrf?file=/src/index.jsx)
  - npx create-react-app <name>
    cd <name>
    npm start
- - [Google Keep Clone] (https://uyz3m.csb.app/)
+ - [Google Keep Clone](https://uyz3m.csb.app/)
  - React Props 
     - different pieces of info on components (custom components custom properties)
 ```
@@ -73,4 +73,37 @@ function Card(props) {
     - reduce
     - find
     - findIndex
+>#  Day 4 - 23/12/20 
+- Anonymous function
+- Arrow functions
+```
+let newNumbers = numbers.map(function (x) {
+  return x * 2;
+});
+newNumbers = numbers.map((x) => {
+  return x * 2;
+});
+newNumbers = numbers.map((x) => x * 2);
+```
     
+```
+{emojipedia.map((emojiTerm) => (
+  <Entry
+    key={emojiTerm.id}
+    emoji={emojiTerm.emoji}
+    name={emojiTerm.name}
+    description={emojiTerm.meaning}
+  />
+))}
+```
+- [Keeper App Project Part 2](https://codesandbox.io/s/keeper-app-part-2-starting-forked-y88ci)
+- Conditional REndering of React Components: because we need an expression rather than statements we have to make use of ternary operators instead of simple if-else
+ - [Example](https://codesandbox.io/s/conditional-rendering-forked-dldn9?file=/src/components/App.jsx)
+ - && in React => Condition && Expression
+    - example x>10 ? A : null is equivalent to x>10 && A 
+    - rendering the componenet only when the condition is true
+ - [Basic Login Flow](https://codesandbox.io/s/conditional-rendering-practice-forked-p7dlw)
+ - State 
+    -UI = function(State)
+    - Declarative & Imperative Programming
+    - React Hooks 
