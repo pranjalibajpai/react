@@ -107,3 +107,35 @@ newNumbers = numbers.map((x) => x * 2);
     -UI = function(State)
     - Declarative & Imperative Programming
     - React Hooks 
+>#  Day 5 - 24/12/20
+- React Hooks
+    - In order to change the UI, we need to re-render ReactDOM
+    - Hook called useState -> use inside a functional component i.e. create a function that renders a component  
+    - useState(initial state, function)
+    - to get value state[0]
+    - now we track the state whenever it gets updated we re-render the components
+    - Destructure example 
+        - const [red, green, blue] = [1, 2, 3]
+        - now we don't need the index to access the elements
+```
+import React, { useState } from "react";
+function App() {
+  const [count, setCount] = useState(0);
+  function increase() {
+    setCount(count + 1);
+  }
+  function decrease() {
+    setCount(count - 1);
+  }
+  return (
+    <div className="container">
+      <h1>{count}</h1>
+      <button onClick={increase}>+</button>
+      <button onClick={decrease}>-</button>
+    </div>
+  );
+export default App;
+```
+- [Hooks Example](codesandbox.io/s/usestate-hook-forked-vpcf1)
+- setInterval(function, time in milliseconds)
+- [Get Current Time Hooks Practice](https://codesandbox.io/s/usestate-hook-practice-forked-zei4x)
