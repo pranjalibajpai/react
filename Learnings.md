@@ -139,3 +139,31 @@ export default App;
 - [Hooks Example](codesandbox.io/s/usestate-hook-forked-vpcf1)
 - setInterval(function, time in milliseconds)
 - [Get Current Time Hooks Practice](https://codesandbox.io/s/usestate-hook-practice-forked-zei4x)
+>#  Day 6 - 26/12/20
+- [Event Handling](https://z06b7.csb.app/)
+```
+<button
+style={{ backgroundColor: color }}
+onMouseOver={handleOver}
+onMouseOut={handleOut}>
+const [color, setColor] = useState("white");
+
+function handleOver() {
+setColor("black");
+}
+
+function handleOut() {
+setColor("white");
+}
+```
+- controlled components
+ - form input
+```
+ function handleChange(event){
+    setName(event.target.value);
+ }
+```
+ -preventDefault() - prevents default behaviour of elements, in case of button inside form elements it is refresh
+ - if using form element use form onSubmit={handleClick} instead of having this on submit button
+- Hooks can be used with functional components, we can't use them with class components
+- 
