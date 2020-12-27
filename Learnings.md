@@ -166,4 +166,18 @@ setColor("white");
  -preventDefault() - prevents default behaviour of elements, in case of button inside form elements it is refresh
  - if using form element use form onSubmit={handleClick} instead of having this on submit button
 - Hooks can be used with functional components, we can't use them with class components
+>#  Day 7 - 27/12/20
+- Changing Complex State
+```
+  const [contact, setContact] = useState({ fname: "", lname: "", email: "" });
+```
+- Set variable whose value changes, rest value are assigned previous values
+```
+setContact((previous) => {
+return { fname: value, lname: previous.lname, email: previous.email };
+});
+```
+- destructuring event.target ``` const { name, value } = event.target; ```
 - 
+- [Practice](https://codesandbox.io/s/changing-complex-state-practice-forked-jodwm)
+- ES6 spread operator
